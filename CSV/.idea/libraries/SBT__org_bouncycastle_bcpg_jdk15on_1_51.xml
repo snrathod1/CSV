@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: org.bouncycastle:bcpg-jdk15on:1.51">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/org.bouncycastle/bcpg-jdk15on/1.51/jars/bcpg-jdk15on.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

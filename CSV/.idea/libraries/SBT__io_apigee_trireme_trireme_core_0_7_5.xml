@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: io.apigee.trireme:trireme-core:0.7.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/io.apigee.trireme/trireme-core/0.7.5/jars/trireme-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

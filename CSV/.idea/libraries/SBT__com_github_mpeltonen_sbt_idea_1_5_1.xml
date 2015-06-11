@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: com.github.mpeltonen:sbt-idea:1.5.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/com.github.mpeltonen/sbt-idea/scala_2.10/sbt_0.13/1.5.1/jars/sbt-idea.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

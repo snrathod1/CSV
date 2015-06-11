@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: org.apache.maven:maven-model-builder:3.2.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/org.apache.maven/maven-model-builder/3.2.2/jars/maven-model-builder.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

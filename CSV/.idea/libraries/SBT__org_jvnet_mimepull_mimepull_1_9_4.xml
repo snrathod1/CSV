@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: org.jvnet.mimepull:mimepull:1.9.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/org.jvnet.mimepull/mimepull/1.9.4/jars/mimepull.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
