@@ -4,6 +4,8 @@ object Csv {
   def main(args: Array[String]): Unit = {
     println("Please enter the CSV file:")
     val filename = Console.readLine
+    //JJE - You've got the right idea here, but opening, reading, and iterating the file 4 times is a big performance cost.
+    //If you've got a time-intensive operation (I/O operations: data from file, database or web, long loops), do it just once.
     avgDaily(filename)
     avgYearlyHourly(filename)
     totalAnnual(filename)
@@ -14,6 +16,12 @@ object Csv {
     val lines = newfile.getLines.drop(1)
     val days = 365
     var usage = 0.0
+    //In scala, we can use a more functional style with an immutable variable instead of a mutable one using 'map' and 'sum'.
+//    val usage = lines.map(line=>{
+//      val arr = line.split("\\s")
+//      arr(4).toDouble
+//    }).sum
+
     for (line <- lines ) {
       val arr = line.split("\\s+")
       usage += arr(4).toDouble
@@ -33,6 +41,12 @@ object Csv {
     var totalUsage = 0.0 // total usage
     for (line <- lines ) {
       hour += 1 //number of line (hours)
+
+      //JJE - Instead of using the regex split, we can use the split on character instead which will give us Array[String] instead of Array[Char]
+      //which is a lot easier to work with.
+//      line.split(' ')
+//      line.split(',')  //Or with commas
+
       val arr = line.split("\\s+") // creates array dividing with spaces
       val perHour = arr(4).toDouble //gets usage, turns it into a double
       totalUsage += perHour
@@ -45,6 +59,10 @@ object Csv {
     val newfile = Source.fromFile(file)
     val lines = newfile.getLines.drop(1)
     var usage = 0.0
+    //JJE - we've got this same code below many places in the file.  We can just do it once and save having to run the loop many times.
+    //Then we can also potentially reuse the value of the total usage to get the average instead of calculating it again.
+
+
     for (line <- lines ) {
       val arr = line.split("\\s+")
       usage += arr(4).toDouble
@@ -118,6 +136,9 @@ object Csv {
     val lines = newfile.getLines.drop(1)
     var tally = new Array[Int](24)
     var date = "2/1/11"
+
+  //JJE - Try using a java Date or add the Joda-Time package via SBT
+
     for (line <- lines ) {
       val arr = line.split("\\s+")
       if(arr(0) == date) {
@@ -126,6 +147,10 @@ object Csv {
     }
 
 
+   //JJE - Now try it using the actual CSV file instead of converting it to a text file.
+  //JJE - Also, check out the CSV parsing package here: https://github.com/tototoshi/scala-csv
+  //It might make your life easier.  You can add it to your build.sbt
+  // "com.github.tototoshi" %% "scala-csv" % "1.1.1"
 
 
 
