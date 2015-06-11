@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SBT: org.apache.maven:maven-settings:3.2.2">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/org.apache.maven/maven-settings/3.2.2/jars/maven-settings.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SBT: org.codehaus.plexus:plexus-utils:3.0.17">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/org.codehaus.plexus/plexus-utils/3.0.17/jars/plexus-utils.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
