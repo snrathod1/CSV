@@ -1,4 +1,4 @@
-name := "hello-scala"
+name := "csv"
 
 version := "1.0"
 
