@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SBT: org.vafer:jdeb:1.3">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/activator-1.3.2/repository/org.vafer/jdeb/1.3/jars/jdeb.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
